@@ -4,7 +4,7 @@ const SingleCoffee = ({ coffee }) => {
   const { _id, name, chef, supplier, taste, category, details, photo } = coffee;
 
   const handleDeleteCoffee = (id) => {
-    fetch(`http://localhost:5000/user/${id}`, {
+    fetch(`https://coffee-server-module-56.vercel.app/user/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

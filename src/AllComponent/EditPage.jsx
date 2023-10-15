@@ -19,7 +19,7 @@ const EditPage = () => {
     const coffees = { name, chef, supplier, taste, category, details, photo };
     console.log(coffees);
 
-    fetch(`http://localhost:5000/user/${_id}`, {
+    fetch(`https://coffee-server-module-56.vercel.app/user/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
